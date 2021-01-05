@@ -1,0 +1,75 @@
+:root {
+    --maroon: #800000;
+    --dark-red: #8b0000;
+    --fire-brick: #B22222;
+    --brown: #a52a2a;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diamond {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+
+span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid var(--dark-red);
+    border-bottom: 50px solid var(--fire-brick);
+    border-left: 50px solid transparent;
+}
+
+span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid var(--maroon);
+    border-right: 50px solid var(--dark-red);
+    border-bottom: 50px solid var(--fire-brick);
+    border-left: 50px solid var(--brown);
+}
+
+span:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid var(--maroon);
+    border-right: 50px solid var(--dark-red);
+    border-bottom: 50px solid var(--fire-brick);
+    border-left: 50px solid var(--brown);
+}
+
+span:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid var(--maroon);
+    border-right: 50px solid var(--dark-red);
+    border-bottom: 50px solid var(--fire-brick);
+    border-left: 50px solid var(--brown);
+}
