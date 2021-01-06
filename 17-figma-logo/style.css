@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.party {
+    width: 90px;
+    height: 90px;
+}
+
+.party-1 {
+    background: #ee4e2a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.party-2 {
+    background: #fb7266;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.party-3 {
+    background: #a061fa;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.party-4 {
+    background: #2ebdfa;
+    border-radius: 50%;
+}
+
+.party-5 {
+    background: #00ce84;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
