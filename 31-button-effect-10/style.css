@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem 2.5rem;
+    background: #f1c40f;
+    color: white;
+    position: relative;
+}
+
+a:before {
+    content: 'Hover me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2ce771;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(270deg);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+a:after {
+    content: 'Hover me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(270deg);
+    transform-origin: right;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+
+a:hover:before, a:hover:after {
+    transform: rotateX(0);
+}
