@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+.fig {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.fig::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #006266;
+    opacity: 0.5;
+    transform: translateY(100%);
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.caption h3, .caption h5 {
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.caption h3 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.caption h5 {
+    background: #a989d9;
+    padding: 3px 5px;
+}
+
+.fig:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;    
+}
+
+.fig:hover::before {
+    transform: translateY(0);
+    transition-delay: 0;
+}
