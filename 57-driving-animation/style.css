@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-position: bottom left;
+    -webkit-animation: driving 15s linear infinite;
+    animation: driving 15s linear infinite;
+}
+
+@-webkit-keyframes driving {
+    from {
+        background-position: bottom left;
+    }
+
+    to {
+        background-position: bottom right;
+    }
+}
+
+@keyframes driving {
+    from {
+        background-position: bottom left;
+    }
+
+    to {
+        background-position: bottom right;
+    }
+}
+
+.car {
+    position: absolute;
+    width: 10rem;
+    bottom: -7%;
+    left: 15%;
+}
+
+.motor-bike {
+    position: absolute;
+    width: 10rem;
+    bottom: 8%;
+    left: 45%;
+}
