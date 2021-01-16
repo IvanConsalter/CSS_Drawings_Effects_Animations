@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+span::before {
+    content: 'transition';
+    text-transform: uppercase;
+    color: darkslateblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-animation: word-switch 5s linear infinite;
+            animation: word-switch 5s linear infinite;
+}
+
+@-webkit-keyframes word-switch {
+    0% {
+        content: 'transitions';
+    }
+
+    50% {
+        content: 'transforms';
+    }
+
+    100% {
+        content: 'animations';
+    }
+}
+
+@keyframes word-switch {
+    0% {
+        content: 'transitions';
+    }
+
+    50% {
+        content: 'transforms';
+    }
+
+    100% {
+        content: 'animations';
+    }
+}
